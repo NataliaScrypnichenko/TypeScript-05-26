@@ -1,3 +1,1 @@
- let a:string='hello world';
-// як зробити щоб комбілятор зробив з тайскріптового кода джаваскріптовий
-
+let c:string ='hello world';
