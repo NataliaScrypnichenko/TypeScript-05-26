@@ -82,5 +82,7 @@ const user = new User('nata', 24,true);
 
 let users:User[] = [
 
-    new User('sara', 45, true)// не має грітін тому що, знаходиться під капотом в моделі
+    new User('sara', 45, true),// не має грітін тому що, знаходиться під капотом в моделі
+    new User('yna', 45, true)
 ];
+console.log(users);
