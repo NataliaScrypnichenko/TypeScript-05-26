@@ -1,6 +1,6 @@
 "use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
-// ;
+Object.defineProperty(exports, "__esModule", { value: true });
+;
 let users = [
     { name: 'vasya', age: 31, status: false },
     { name: 'petya', age: 30, status: true },
