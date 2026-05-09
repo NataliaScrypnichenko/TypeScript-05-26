@@ -1,16 +1,8 @@
-//   #3ckURgvs
-// – Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-//   (в першу, другу, третю або четверту частину години).
-// let time =+ prompt('вести хвилини');
-//
-// if (time >=0 && time< 15){
-//     console.log("першa частина години");
-// } else if (time >=15 && time < 30){
-//     console.log("другa частина години");
-// }else if (time >=30 && time < 45){
-//     console.log("третя частина години");
-// }else if (time >=45 && time < 59){
-//     console.log("четверта частина години");
-// }else{
-//     console.log('закінчено')
-// }
+//Поля об’єкту : title ,pageCount, genre.
+
+type Book = { title:string, pageCount: number, gener: string }
+
+let book2: Book = {title: "Memory", pageCount: 200, gener: "psychology",};
+let book3: Book= {title: "Joan of Arc", pageCount: 157, gener: "historical",};
+let book1:Book = {title: "JavaScript", pageCount: 400, gener: "science",};
+

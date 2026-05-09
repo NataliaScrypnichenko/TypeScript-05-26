@@ -1,30 +1,35 @@
-//Поля об’єкту : title ,pageCount, genre, authors. Поле “автори” – являється  масивом.
-// Кожен автор має поля name та age
- // authors:{name:string,age:number}[]
-type author={name:string,age:number}
-type Book={
-    title: string,
-    pageCount: number,
-    gener:string,
-    authors: author[],
-}
+//#jCHFnEbdmFd
+// – Створити масив з 10 об’єктами, які описують сутніть “користувач”. Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
-let book1:Book = {
-    title:"JavaScript",
-    pageCount: 400,
-    gener:"science",
-    authors:[{name:'Taras', age:45},{name:'Jana', age:40},{name:'yra',age:23}],
-};
-let book2:Book = {
-    title:"Memory",
-    pageCount: 200,
-    gener:"psychology",
-    authors:[{name:'Taras', age:45},{name:'Jana', age:40}],
-};
-let book3:Book = {
-    title: "Joan of Arc",
-    pageCount: 157,
-    gener: "historical",
-    authors:[{name:'Anna', age:45},{name:'Jana', age:40},{name:'Pasha',age:23},{name:'yra',age:23}],
-};
-console.log(book1);
+type User_task5={
+    name: string,
+    username: string,
+    password: string
+}
+// let user3:Users_task5={name:"mama",username:"fds",password:"2434",}
+// let user4:Users_task5={name:"mama",username:"fds",password:"2434",}
+// let user5:Users_task5={name:"mama",username:"fds",password:"2434",}
+
+let users_task5:User_task5[]=[
+    {name: 'vasya', username: "erty", password: '1233' },
+    {name: 'vasya', username: "erty", password: '3456jk' },
+    {name: 'vasya', username: "erty", password: '12eety566' },
+    {name: 'olya', username: "erty", password: '12566' },
+    {name: 'anna', username: "erty", password: '1566' },
+    {name: 'vasya', username: "erty", password: '12eety096' },
+    {name: 'vasya', username: "erty", password: 'ghg12eety566' },
+    {name: 'masha', username: "erty", password: '12eety5jhjk66' },
+    {name: 'ket', username: "erty", password: '12eety5gh66' },
+    {name: 'pep', username: "erty", password: '12eety566fdgfj' },
+
+];
+console.log(users_task5 [0].password);
+console.log(users_task5 [1].password);
+console.log(users_task5 [2].password);
+console.log(users_task5 [3]['password']);
+console.log(users_task5 [4]['password']);
+console.log(users_task5 [5]['password']);
+console.log(users_task5 [6]['password']);
+console.log(users_task5 [7]['password']);
+console.log(users_task5 [8]['password']);
+console.log(users_task5 [9]['password']);
