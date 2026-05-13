@@ -27,7 +27,7 @@
 //
 // за допомогою стилів, побудувати сітку по 2 об’єктах в рядок
 //
-// Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 let usersList = [
     {
         id: 1,
