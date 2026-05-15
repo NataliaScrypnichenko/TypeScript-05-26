@@ -1,0 +1,9 @@
+"use strict";
+//– створити функцію, яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
+Object.defineProperty(exports, "__esModule", { value: true });
+function list(text) {
+    document.write(`
+
+    `);
+}
+list("Hello");

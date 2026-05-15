@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+//#SIdMd0hQ
+//– створити функцію, яка приймає масив та виводить кожен його елемент
+let printArray = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+};
+let arr = [123, 234, 345, -123, 0, true, 'asdfgh'];
+console.log(printArray(arr));
