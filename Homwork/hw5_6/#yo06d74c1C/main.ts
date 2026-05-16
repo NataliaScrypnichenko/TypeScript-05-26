@@ -15,7 +15,13 @@
 //
 //  — за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
 
-let coursesAndDurationArray = [
+type durationArrayType={
+    title: string,
+    monthDuration: number,
+    id?:number,
+}
+
+let coursesAndDurationArray:durationArrayType[] = [
     {title: 'Java Complex', monthDuration: 6},
     {title: 'Python Complex', monthDuration: 6},
     {title: 'QA Complex', monthDuration: 4},
@@ -43,8 +49,9 @@ let coursesAndDurationArray = [
 // console.log(mapArray);
 
 
-const map= coursesAndDurationArray
-   .sort((a,b)=>a-b)
+const map:durationArrayType[]= coursesAndDurationArray
+    //@ts-ignore
+   .sort((a:durationArrayType,b:durationArrayType):any=>a-b)
    .filter(value=>value.monthDuration > 5)
    .map((value, index) =>{
        value.id=index+1;

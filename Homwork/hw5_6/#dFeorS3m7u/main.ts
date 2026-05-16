@@ -4,9 +4,9 @@
 // ‘javascript is cool’
 
 
-let message='hello world';
-let lorem='lorem ipsum';
-let js = 'javascript is cool';
+let message:string='hello world';
+let lorem:string='lorem ipsum';
+let js:string = 'javascript is cool';
  console.log(message.length);// 11
 console.log(lorem.length);//11
 console.log(js.length);//18

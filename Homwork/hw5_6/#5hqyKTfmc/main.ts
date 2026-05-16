@@ -8,29 +8,29 @@
 //
 // sortNums(nums,’descending’) // [21,11,3]
 
-let nums = [11,21,3];
+let nums:number[] = [11,21,3];
 
-function sortNums(array,direction){
+function sortNums(array:number[],direction:string){
      if (direction ==='ascending'){
-         array.sort((a,b)=> {
+         array.sort((a:number,b:number)=> {
              return a - b;
          })
      };
      if (direction==='descending'){
-         array.sort((a,b)=> {
+         array.sort((a:number,b:number)=> {
              return b - a;
          })
      };
     return array;
 };
- let sortNumsAscending=sortNums(nums, 'ascending')
+ let sortNumsAscending:number[]=sortNums(nums, 'ascending')
 console.log(sortNumsAscending);
 
- let sortNumsDescending=sortNums(nums, 'descending');
+ let sortNumsDescending:number[]=sortNums(nums, 'descending');
  console.log(sortNumsDescending);
 
- function sortNums2(arrayOfNums,direction){
-     const sort = arrayOfNums.sort((a,b)=> a-b);
+ function sortNums2(arrayOfNums:number[],direction:string){
+     const sort:number[] = arrayOfNums.sort((a,b)=> a-b);
      if (direction==='ascending'){
          return sort;
      }

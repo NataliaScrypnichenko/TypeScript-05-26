@@ -5,9 +5,9 @@
 //     let arr = stringToarray(str); [‘Ревуть’, ‘воли’, ‘як’, ‘ясла’, ‘повні’]
 
 
-let str = "Ревуть воли як ясла повні";
+let str:string = "Ревуть воли як ясла повні";
 
-function stringToarray(str){
+function stringToarray(str:string) {
  const newStr = str.split(' ');
  return newStr;
 };

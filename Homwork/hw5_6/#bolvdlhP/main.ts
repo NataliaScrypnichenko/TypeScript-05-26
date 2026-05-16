@@ -23,16 +23,16 @@
 //
 // }
 
- const suits=[
+ const suits:{name:string, color:string}[]=[
      {name:'diamond', color:'red'},
      {name:'heart', color:'red'},
      {name:'spand', color:'black'},
      {name:'clubs', color:'black'}
  ];
 
-const values =['6', '7', '8','9', '10','ace','jack','queen','king'];
+const values:any[] =['6', '7', '8','9', '10','ace','jack','queen','king'];
 
-const deckOfCards =[];
+const deckOfCards:any[] =[];
 
 for (let suit of suits ) {
     for (let value of values) {

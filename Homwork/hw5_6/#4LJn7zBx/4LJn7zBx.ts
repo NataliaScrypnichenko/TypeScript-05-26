@@ -3,8 +3,13 @@
 // –написати пошук всіх об’єктів, в яких в modules є sass
 //
 // –написати пошук всіх об’єктів, в яких в modules є docker
-
-let coursesArray = [
+type coursesType = {
+	title: string;
+	monthDuration: number;
+	hourDuration: number;
+	modules: string[];
+}
+let coursesArray:coursesType[] = [
     {
         title: 'JavaScript Complex',
         monthDuration: 5,
@@ -74,12 +79,12 @@ let coursesArray = [
     }
 ];
 //якщо масив то пишемо так
-const findSass = coursesArray.filter(value =>{
+const findSass:coursesType[] = coursesArray.filter(value =>{
     return value.modules.includes('sass');
 });
 console.log(findSass);
 
-const findDocker = coursesArray.filter(value =>{
+const findDocker:coursesType[] = coursesArray.filter(value =>{
     return value.modules.includes('docker');
 });
 console.log(findDocker);

@@ -14,17 +14,22 @@
 //     clubs:[]
 //
 // }
+type cardType={
+    name: string,
+    color: string,
+    value: string,
+}
 
-const suits=[
+const suits:{name:string,color:string}[]=[
     {name:'diamond', color:'red'},
     {name:'heart', color:'red'},
     {name:'spad', color:'black'},
     {name:'clubs', color:'black'}
 ];
 
-const values =['6', '7', '8','9', '10','ace','jack','queen','king'];
+const values:string[] =['6', '7', '8','9', '10','ace','jack','queen','king'];
 
-const deckOfCards =[];
+const deckOfCards:any[] = [ ];
 
 for (let suit of suits ) {
     for (let value of values) {
@@ -38,7 +43,7 @@ for (let suit of suits ) {
 
 console.log(deckOfCards);
 
-console.log(deckOfCards.reduce((previousValue, card,) => {
+console.log(deckOfCards.reduce((previousValue:any, card:any):any => {
     if (card.cardSuit === 'diamond' ){
         previousValue.diamonds.push(card);
     }else if (card.cardSuit === 'heart' ){
