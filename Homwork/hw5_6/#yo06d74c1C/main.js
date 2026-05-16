@@ -15,7 +15,7 @@
 //  — відфільтрувати, залишивши тільки курси з тривалістю понад 5 місяців
 //
 //  — за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-// Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 let coursesAndDurationArray = [
     { title: 'Java Complex', monthDuration: 6 },
     { title: 'Python Complex', monthDuration: 6 },
@@ -43,6 +43,7 @@ let coursesAndDurationArray = [
 // });
 // console.log(mapArray);
 const map = coursesAndDurationArray
+    //@ts-ignore
     .sort((a, b) => a - b)
     .filter(value => value.monthDuration > 5)
     .map((value, index) => {

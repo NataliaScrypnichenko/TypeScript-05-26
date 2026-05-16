@@ -2,13 +2,20 @@
 //*Через Array.prototype. створити власний foreach, filter
 
 // власний foreach
+//@ts-ignore
 
 Array.prototype.myForEach = function (callback) {
     for (let i = 0; i < this.length; i++) {
         callback(this[i],i,this);
     };
 };
-let users = [
+type userType={
+    name: string,
+    age: number,
+    status: boolean,
+}
+
+let users:userType[] = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -21,12 +28,14 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
+//@ts-ignore
 
 users.myForEach(values => {
     console.log(values)
 });
 
 //filter
+//@ts-ignore
 Array.prototype.myFilter = function (callback) {
     let result = [];
     for (let i = 0; i < this.length; i++) {
@@ -36,5 +45,6 @@ Array.prototype.myFilter = function (callback) {
     };
     return result;
 };
+//@ts-ignore
 console.log(users.myFilter(user => user.age > 28));
 
