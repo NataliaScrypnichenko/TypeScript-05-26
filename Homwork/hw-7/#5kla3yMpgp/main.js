@@ -16,20 +16,18 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Car {
     constructor(model, manufacturer, year, maxSpeed, engineVolume) {
-        //@ts-ignore
         this.model = model;
-        //@ts-ignore
         this.manufacturer = manufacturer;
-        //@ts-ignore
         this.year = year;
-        //@ts-ignore
         this.maxSpeed = maxSpeed;
-        //@ts-ignore
-        this.engineVolume = engineVolume;
+        this.model = model;
+        this.manufacturer = manufacturer;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+        // this.engineVolume = engineVolume;
     }
     ;
     drive() {
-        //@ts-ignore
         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
     }
     ;
@@ -40,18 +38,15 @@ class Car {
     }
     ;
     increaseMaxSpeed(newSpeed) {
-        //@ts-ignore
         this.maxSpeed = this.maxSpeed + newSpeed;
     }
     ;
     changeYear(newValue) {
-        //@ts-ignore
         this.year = newValue;
     }
     ;
     addDriver(driver) {
-        //@ts-ignore
-        this.driver = driver;
+        // this.driver = driver;
     }
     ;
 }

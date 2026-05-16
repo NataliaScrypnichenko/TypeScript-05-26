@@ -2,7 +2,7 @@
 // – Створити функцію конструктор для об’єктів User з полями id, name, surname , email, phone
 //
 // створити пустий масив, наповнити його 10 об’єктами new User(….)
-// Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 class User {
     // private видимі тільки в межах класу звернутися можемо тільки через гетери і сети через generate із заннятя замикання
     //

@@ -8,14 +8,17 @@
 // ! Додатково, знайти необхідну попелюшку за допомогою функції масиву find та відповідного колбеку
 
 class Princess{
-    constructor(name,age,sizeShoes){
+    name: string;
+    age: number;
+    sizeShoes: number;
+    constructor(name:string,age:number,sizeShoes:number){
         this.name=name;
         this.age=age;
         this.sizeShoes=sizeShoes;
     };
 };
 
-const princesses = [
+const princesses:Princess[] = [
     new Princess('Vika',22,36),
     new Princess('Yana',21,36),
     new Princess('Dasha',34,39),
@@ -31,14 +34,19 @@ const princesses = [
 console.log(princesses);
 
 class Prince{
-    constructor(name,age,findShoes){
+    name:string;
+    age:number;
+    findShoes:number;
+    wife?: Princess;
+
+    constructor(name:string,age:number,findShoes:number){
         this.name=name;
         this.age=age;
         this.findShoes=findShoes;
     }
 
 };
-let price=new Prince('Roma',26,35)
+let price:Prince=new Prince('Roma',26,35)
 console.log(price);
 
 
