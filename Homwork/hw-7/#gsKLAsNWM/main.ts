@@ -2,9 +2,14 @@
 //*Через Array.prototype. створити власний foreach, filter
 
 // власний foreach
-//@ts-ignore
+//якщо дублюється по факту ім'я то звиртаємося до існуючого арея
 
-Array.prototype.myForEach = function (callback) {
+interface Array<T>{
+    myForEach(callback :(value:T)=>void):void;
+}
+
+//@ts-ignore
+Array.prototype.myForEach = function<T> (callback:any) {
     for (let i = 0; i < this.length; i++) {
         callback(this[i],i,this);
     };
@@ -28,15 +33,19 @@ let users:userType[] = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-//@ts-ignore
 
+//@ts-ignore
 users.myForEach(values => {
     console.log(values)
 });
 
 //filter
+interface Array<T>{
+    myFilter(callback :(value:T)=>boolean):T[];
+}
+
 //@ts-ignore
-Array.prototype.myFilter = function (callback) {
+Array.prototype.myFilter = function<T> (callback) {
     let result = [];
     for (let i = 0; i < this.length; i++) {
         if (callback(this[i])) {
