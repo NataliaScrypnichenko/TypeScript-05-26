@@ -7,42 +7,35 @@
 
 
 //вирішила за допомоги відповіді ДЗ
-// function copyObject(obj) {
-//     if (obj === undefined) {
-//         return undefined;
-//     }
-//     if (obj === null) {
-//         return null;
-//     }
-//     if (typeof obj ==='number'&& Number.isNaN===NaN(obj)){
-//         return NaN;
-//     }
-//     if (obj ) {
-//
-//         let functions=[];// створили масив куди будем ложити ф-ї
-//         for (const key in obj) {
-//
-//                if (typeof obj[key] === 'function') {  //перевіряємо тип ключі об'єкта являються функцією
-//                    const functionCopy = obj[key].bind({});//якщо так, то робимо копію
-//                    functions.push({functionCopy,key});// потім додаємо об'єкт з ключем
-//                }
-//         }
-//         // console.log(functions);//провіряємо чи там функції
-//         const objectCopy= JSON.parse(JSON.stringify(obj));
-//         // objectCopy[functions[0].key] =functions[0].functionCopy;
-//         // objectCopy[functions[1].key] =functions[1].functionCopy;
-//         //не розуміємо скільки є там ф-ій(об'єкт) то ітеруємо
-//         for (const func of functions) {
-//            objectCopy[func.key] = func.functionCopy;
-//         }
-//         console.log(objectCopy);
-//         return objectCopy ;
-//     }
-//     throw new Error('!!!!!!!!')
-// }
-// const clone = copyObject({id: 1, name:'Dasha',greeting(){console.log('hello')}, work(){console.log('by')}});
-// clone.work();
-// clone.greeting();
-// console.log(copyObject(undefined));
-// console.log(copyObject(20));
-// console.log(copyObject(null));
+
+type FunctionCloneObject={ functionClone: Function, key: string }
+
+function  cloner<T>(obj: T): T {
+    if (obj){
+
+        const functions:Array<FunctionCloneObject>=[];
+        for (const key in obj){
+            if (typeof(obj[key]) == "function"){
+                const functionClone=  (obj[key] as Function).bind({});
+                functions.push({functionClone, key})
+            }
+        }
+        const cloneObj:T= JSON.parse(JSON.stringify(obj));
+        for(const func of functions){
+            (cloneObj as any)[func.key] = func.functionClone;
+        }
+        console.log(cloneObj);
+        return cloneObj
+    }
+    throw new Error('!!!!!!!!!!!!!!')
+};
+
+const clone=cloner({
+    id:123, name:'jek',greting(){
+         console.log('hello');
+    },foo(){
+        console.log('bar');
+    }
+});
+// @ts-ignore
+clone.foo();

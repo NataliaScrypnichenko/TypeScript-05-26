@@ -21,14 +21,14 @@
 //
 //     Зробити все ВИКЛЮЧНО за допомогою інлайн конструкції
 
-type coursesType={
+interface courses{
     id?: number,
     title: string,
     monthDuration: number
 
 }
 
-let coursesAndDurationArray:coursesType[] = [
+let coursesAndDurationArray:courses[] = [
 
     {title: 'JavaScript Complex', monthDuration: 5},
 
@@ -43,7 +43,7 @@ let coursesAndDurationArray:coursesType[] = [
     {title: 'Frontend', monthDuration: 4}
 
 ];
- let mapCoursesAndDurationArray:coursesType[]=coursesAndDurationArray.map((value, index) =>{
+ let mapCoursesAndDurationArray:courses[]=coursesAndDurationArray.map((value, index) =>{
      return {id: index +1, title: value.title, monthDuration: value.monthDuration}
  } );
 
