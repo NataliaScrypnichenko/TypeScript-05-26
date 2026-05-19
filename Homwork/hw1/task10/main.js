@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //   #uwsz1RnTQJ1
 //
 // – Користувач вводить або має два числа.

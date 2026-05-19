@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //– Перевести до великого регістру наступні стрінгові значення
 //
 //       ‘hello world’, ‘lorem ipsum’, ‘javascript is cool’

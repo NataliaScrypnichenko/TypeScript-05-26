@@ -5,7 +5,6 @@
 // Додати перевірки на undefined, null, NaN.
 //
 // Подумати і реалізувати логіку, в якій кінцевий об’єкт буде мати функції, які в нього були до цього моменту.
-Object.defineProperty(exports, "__esModule", { value: true });
 function cloner(obj) {
     if (obj) {
         const functions = [];

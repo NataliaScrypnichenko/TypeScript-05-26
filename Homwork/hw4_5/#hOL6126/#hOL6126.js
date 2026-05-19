@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //#hOL6126
 //– створити функцію, яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 let list = (text1, text2, text3) => {

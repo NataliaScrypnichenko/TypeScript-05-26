@@ -8,7 +8,6 @@
 //     //     <img src="IMAGE" alt="" class="product-image">
 //     // </div>
 //     // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
-Object.defineProperty(exports, "__esModule", { value: true });
 let products = [
     {
         title: 'milk',

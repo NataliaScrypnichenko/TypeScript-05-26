@@ -15,7 +15,6 @@
 //  — відфільтрувати, залишивши тільки курси з тривалістю понад 5 місяців
 //
 //  — за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-Object.defineProperty(exports, "__esModule", { value: true });
 let coursesAndDurationArray = [
     { title: 'Java Complex', monthDuration: 6 },
     { title: 'Python Complex', monthDuration: 6 },

@@ -3,7 +3,6 @@
 // (поле є масивом зі списком товарів)
 //
 // створити пустий масив, наповнити його 10 об’єктами Client
-Object.defineProperty(exports, "__esModule", { value: true });
 class Client {
     constructor(id, name, surname, email, phone, order) {
         this.id = id;

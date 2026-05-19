@@ -1,6 +1,5 @@
 "use strict";
 //масив з об'єкт
-Object.defineProperty(exports, "__esModule", { value: true });
 // let users:{name:string, age: number, status:boolean}[] = [
 //     {name: 'olya', age: 28, status: false},
 //     {name: 'max', age: 30, status: true},

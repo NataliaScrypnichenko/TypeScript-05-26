@@ -1,7 +1,6 @@
 "use strict";
 //#jCHFnEbdmFd
 // – Створити масив з 10 об’єктами, які описують сутніть “користувач”. Поля: name, username,password. Вивести в консоль пароль кожного користувача
-Object.defineProperty(exports, "__esModule", { value: true });
 // let user3:Users_task5={name:"mama",username:"fds",password:"2434",}
 // let user4:Users_task5={name:"mama",username:"fds",password:"2434",}
 // let user5:Users_task5={name:"mama",username:"fds",password:"2434",}

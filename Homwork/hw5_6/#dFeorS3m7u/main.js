@@ -3,7 +3,6 @@
 //  ‘hello world’
 // ‘lorem ipsum’
 // ‘javascript is cool’
-Object.defineProperty(exports, "__esModule", { value: true });
 let message = 'hello world';
 let lorem = 'lorem ipsum';
 let js = 'javascript is cool';

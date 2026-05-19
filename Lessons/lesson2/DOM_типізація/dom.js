@@ -27,7 +27,6 @@
 // //створити елемент
 // const p:HTMLParagraphElement = document.createElement('p');
 // p.title
-// Object.defineProperty(exports, "__esModule", { value: true });
 let users = [
     { name: 'vasya', age: 31, status: false },
     { name: 'petya', age: 30, status: true },
@@ -45,4 +44,7 @@ for (const user of users) {
     const div = document.createElement('div');
     div.innerText = user.name;
     document.body.appendChild(div);
+}
+function appender(tag) {
+    document.createElement(tag);
 }

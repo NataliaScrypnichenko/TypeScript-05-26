@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //#pghbnSB
 //– створити функцію, яка повертає найменше число з масиву
 const numberMin = (numbers) => {

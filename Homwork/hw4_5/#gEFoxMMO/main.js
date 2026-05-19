@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //#gEFoxMMO
 //– створити функцію, яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 document.write('<ul>');

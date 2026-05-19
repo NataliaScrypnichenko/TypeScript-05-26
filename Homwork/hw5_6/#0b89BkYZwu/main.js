@@ -1,7 +1,6 @@
 "use strict";
 //#0b89BkYZwu
 //– Є “брудна” стрінга let str = ‘ dirty string   ‘ . Почистити її від зайвих пробілів.
-Object.defineProperty(exports, "__esModule", { value: true });
 let str = ' dirty string   ';
 let strNew = str.trim();
 console.log(strNew);

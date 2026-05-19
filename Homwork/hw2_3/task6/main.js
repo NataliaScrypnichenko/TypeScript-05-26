@@ -33,7 +33,6 @@
 //
 //
 // замість ‘ITEM OF ARRAY’ підставити елемент з масиву, щоб вийшов цілий список з даними з масиву
-Object.defineProperty(exports, "__esModule", { value: true });
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', ' node.js'];
 document.write(`<ul>`);
 for (let item of listOfItems) {

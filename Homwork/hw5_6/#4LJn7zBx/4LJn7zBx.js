@@ -1,6 +1,5 @@
 "use strict";
 //взяти з arrays.js масив coursesArray
-Object.defineProperty(exports, "__esModule", { value: true });
 let coursesArray = [
     {
         title: 'JavaScript Complex',

@@ -18,7 +18,6 @@
 //         this.id = id;
 //     }
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
 let coursesAndDurationArray = [
     { title: 'JavaScript Complex', monthDuration: 5 },
     { title: 'Java Complex', monthDuration: 6 },

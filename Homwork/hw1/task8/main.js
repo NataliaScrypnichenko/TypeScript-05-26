@@ -14,7 +14,6 @@
 // }
 //
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
 let day = 11;
 if (day >= 0 && day <= 10) {
     console.log('first ten-day period of the month');

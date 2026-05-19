@@ -1,7 +1,6 @@
 "use strict";
 //#kpsbSQCt2Lf
 //– створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
-Object.defineProperty(exports, "__esModule", { value: true });
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 let swap = (arr, index1, index2) => {
     let item = arr[index1];

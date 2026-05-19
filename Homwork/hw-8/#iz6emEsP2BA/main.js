@@ -21,7 +21,6 @@
 // за допомогою map перетворити кожен елемент на наступний тип {id,title,monthDuration
 //
 //     Зробити все ВИКЛЮЧНО за допомогою інлайн конструкції
-Object.defineProperty(exports, "__esModule", { value: true });
 let coursesAndDurationArray = [
     { title: 'JavaScript Complex', monthDuration: 5 },
     { title: 'Java Complex', monthDuration: 6 },

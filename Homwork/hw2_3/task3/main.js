@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //#OeT7t3uUMFi
 //– За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 //

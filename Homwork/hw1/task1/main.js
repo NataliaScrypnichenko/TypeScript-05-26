@@ -1,7 +1,6 @@
 "use strict";
 //   #67kfznmiMl
 // – Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-Object.defineProperty(exports, "__esModule", { value: true });
 // let arr: [number,number,[],string,{name:string,value:number},number,string,boolean
 // ,undefined,number] = [11, 22,[], 'hellow', {name:'masha',value:1}, 0, 'qwe', true,undefined,NaN];
 // console.log(arr[0]);

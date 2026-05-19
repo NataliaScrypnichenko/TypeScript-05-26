@@ -1,7 +1,6 @@
 "use strict";
 // #ETGAxbEn8l
 //– створити функцію, яка обчислює та повертає площу кола з радіусом r
-Object.defineProperty(exports, "__esModule", { value: true });
 function circleArea(radius) {
     return Math.PI * (radius * radius);
 }

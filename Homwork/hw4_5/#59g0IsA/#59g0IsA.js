@@ -1,7 +1,6 @@
 "use strict";
 //#59g0IsA
 //– створити функцію, яка створює параграф з текстом. Текст задати через аргумент
-Object.defineProperty(exports, "__esModule", { value: true });
 const textString = (text, c) => {
     document.write(`<p>${text}</p>
                     <p>${c}</p>`);

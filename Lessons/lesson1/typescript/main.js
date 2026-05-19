@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let a = 100;
 // a = 'fvfdv'-дає помилку
 // Коли повертає

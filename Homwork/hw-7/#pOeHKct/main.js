@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //– Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 class User7 {
     constructor(id, name, surname, email, phone) {

@@ -2,7 +2,6 @@
 //   #coYydZuaeEB
 //
 // – описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив – вам потрібно подумати. Нормальних варіантів опису – 2. Варіант, коли в вас буде одновимірний масив з 21 значенням виключаємо одразу
-Object.defineProperty(exports, "__esModule", { value: true });
 let weatherForWeek = [
     { dayWeek: 'Monday', morning: 22, day: 30, evening: 20 },
     { dayWeek: 'Tuesday', morning: 18, day: 24, evening: 10 },

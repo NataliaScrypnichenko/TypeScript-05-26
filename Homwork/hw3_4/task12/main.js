@@ -1,6 +1,5 @@
 "use strict";
 //– створити функцію яка повертає найменьше число з масиву
-Object.defineProperty(exports, "__esModule", { value: true });
 function minArray(numbers) {
     let min = numbers[0];
     for (let i = 1; i < numbers.length; i++) {

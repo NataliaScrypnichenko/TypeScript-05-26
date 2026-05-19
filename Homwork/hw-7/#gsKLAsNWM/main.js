@@ -1,7 +1,6 @@
 "use strict";
 //#gsKLAsNWM
 //*Через Array.prototype. створити власний foreach, filter
-Object.defineProperty(exports, "__esModule", { value: true });
 //@ts-ignore
 Array.prototype.myForEach = function (callback) {
     for (let i = 0; i < this.length; i++) {
@@ -9,6 +8,7 @@ Array.prototype.myForEach = function (callback) {
     }
     ;
 };
+//@ts-ignore
 let users = [
     { name: 'vasya', age: 31, status: false },
     { name: 'petya', age: 30, status: true },

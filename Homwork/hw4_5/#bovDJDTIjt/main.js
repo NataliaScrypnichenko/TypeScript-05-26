@@ -1,7 +1,6 @@
 "use strict";
 //– створити функцію, яка приймає масив об’єктів з наступними полями id,name,age ,
 // та виводить їх в документ. Для кожного об’єкту окремий блок.
-Object.defineProperty(exports, "__esModule", { value: true });
 let arr = (arr) => {
     for (let item of arr) {
         document.write(`

@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //   #iBvqtjEm
 //
 // – є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно).

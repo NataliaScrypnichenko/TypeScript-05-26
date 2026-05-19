@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const suits = [
     { name: 'diamond', color: 'red' },
     { name: 'heart', color: 'red' },

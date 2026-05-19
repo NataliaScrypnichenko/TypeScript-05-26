@@ -1,7 +1,6 @@
 "use strict";
 //– Взяти масив з  User[] з попереднього завдання #XjJuucOMR0,
 // та відфільтрувати, залишивши тільки об’єкти з парними id (filter)
-Object.defineProperty(exports, "__esModule", { value: true });
 class User7 {
     // створюю віртуальне поле
     get id() {

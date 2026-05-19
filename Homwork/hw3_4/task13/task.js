@@ -1,6 +1,5 @@
 "use strict";
 //– створити функцію, яка приймає масив та виводить кожен його елемент
-Object.defineProperty(exports, "__esModule", { value: true });
 function snortsArrayAndDeduce(array) {
     for (let i = 0; i < array.length; i++) {
         console.log(array[i]);

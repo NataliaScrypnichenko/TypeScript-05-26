@@ -4,7 +4,6 @@
 //     let str = ‘Ревуть воли як ясла повні’;
 //
 //     let arr = stringToarray(str); [‘Ревуть’, ‘воли’, ‘як’, ‘ясла’, ‘повні’]
-Object.defineProperty(exports, "__esModule", { value: true });
 let str = "Ревуть воли як ясла повні";
 function stringToarray(str) {
     const newStr = str.split(' ');

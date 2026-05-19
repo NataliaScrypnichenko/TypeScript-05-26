@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //#SIdMd0hQ
 //– створити функцію, яка приймає масив та виводить кожен його елемент
 let printArray = (array) => {

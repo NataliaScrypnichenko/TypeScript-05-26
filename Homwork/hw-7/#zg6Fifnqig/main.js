@@ -7,7 +7,6 @@
 // За допомоги циклу знайти, яка попелюшка повинна бути з принцом.
 //
 // ! Додатково, знайти необхідну попелюшку за допомогою функції масиву find та відповідного колбеку
-Object.defineProperty(exports, "__esModule", { value: true });
 class Princess {
     constructor(name, age, sizeShoes) {
         this.name = name;

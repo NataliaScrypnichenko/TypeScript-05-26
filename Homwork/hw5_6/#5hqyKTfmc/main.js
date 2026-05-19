@@ -8,7 +8,6 @@
 // sortNums(nums,’ascending’) // [3,11,21]
 //
 // sortNums(nums,’descending’) // [21,11,3]
-Object.defineProperty(exports, "__esModule", { value: true });
 let nums = [11, 21, 3];
 function sortNums(array, direction) {
     if (direction === 'ascending') {
