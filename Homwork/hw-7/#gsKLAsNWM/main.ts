@@ -14,12 +14,13 @@ Array.prototype.myForEach = function<T> (callback:any) {
         callback(this[i],i,this);
     };
 };
+//@ts-ignore
 type userType={
     name: string,
     age: number,
     status: boolean,
 }
-
+//@ts-ignore
 let users:userType[] = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
