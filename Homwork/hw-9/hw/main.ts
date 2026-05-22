@@ -7,7 +7,16 @@
 //     для властивості modules зробити список з елементами
 //
 // Приклад структури знаходиться у файлі example.png, який лежить в папці з поточним файлом
-let coursesArray = [
+
+interface ICoursesArray {
+	title: string;
+	monthDuration: number;
+	hourDuration: number;
+	modules: string[];
+}
+
+
+let coursesArray9:ICoursesArray[] = [
     {
         title: 'JavaScript Complex',
         monthDuration: 5,
@@ -77,22 +86,22 @@ let coursesArray = [
     }
 ];
 
-for (const course of coursesArray) {
-    let div = document.createElement('div');
+for (const course of coursesArray9) {
+    let div:HTMLDivElement = document.createElement('div');
     div.classList.add('courses');
-    let h1 = document.createElement('h1');
+    let h1:HTMLHeadElement = document.createElement('h1');
     h1.classList.add('title');
     h1.textContent = course.title;
 
-    let p=document.createElement('p');
+    let p:HTMLParagraphElement=document.createElement('p');
     p.classList.add('duration');
     p.innerHTML = course.monthDuration + ' ' + course.hourDuration;
 
-    let ul = document.createElement('ul');
+    let ul:HTMLMenuElement = document.createElement('ul');
 
     for (let module in course.modules) {
         // console.log(course.modules[module]);
-        let li = document.createElement('li');
+        let li:HTMLLIElement = document.createElement('li');
         li.classList.add('module');
         li.innerHTML = course.modules[module];
         ul.appendChild(li);

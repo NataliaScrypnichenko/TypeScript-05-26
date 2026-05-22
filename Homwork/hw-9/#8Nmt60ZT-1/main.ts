@@ -23,5 +23,5 @@ div.innerText='om didn\'t like going to school, and he didn\'t like working.\n' 
 div.style.color ='red';
 document.body.appendChild(div);
 
-let copyDiv=div.cloneNode(true);
+let copyDiv:Node=div.cloneNode(true);
 document.body.append(copyDiv);

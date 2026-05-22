@@ -7,8 +7,12 @@
 // та <p class=’description’> з monthDuration елементу.
 //
 //     Завдання робити через цикли.
+interface ICoursesAndDurationArray{
+    title: string;
+    monthDuration: number;
+}
 
-let coursesAndDurationArray = [
+let coursesAndDurationArray1:ICoursesAndDurationArray[] = [
 
     {title: 'JavaScript Complex', monthDuration: 5},
 
@@ -24,16 +28,17 @@ let coursesAndDurationArray = [
 
 ];
 
-for (const courses of coursesAndDurationArray) {
-    let div = document.createElement('div');
+for (const courses of coursesAndDurationArray1) {
+    let div:HTMLDivElement = document.createElement('div');
      div.classList.add('item');
 
-     let h1 = document.createElement('h1');
+     let h1:HTMLDivElement = document.createElement('h1');
      h1.classList.add('heading');
      h1.innerHTML = courses.title;
 
-     let p = document.createElement('p');
+     let p:HTMLDivElement = document.createElement('p');
      p.classList.add('description');
+     //@ts-ignore
      p.innerHTML = courses.monthDuration;
 
      div.append(h1, p);
