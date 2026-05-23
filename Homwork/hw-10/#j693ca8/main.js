@@ -9,22 +9,22 @@
 // чи менше він за 18, та повідомити про це користувача
 let input = document.getElementById('ageInput');
 let button = document.getElementById('check');
-button.innerText = 'checking age'.toString();
-let message = document.getElementById('message');
+button.innerText = 'checking age';
+let messageDiv = document.getElementById('message');
 button.onclick = function () {
     //з читую яку інформацию вели
     let age = Number(input.value);
     // перетворюємо в число
     //перевірка данних
     if (isNaN(age)) {
-        message.innerText = 'веди число';
+        messageDiv.innerText = 'веди число';
         return;
     }
     if (age > 18) {
-        message.innerText = 'надано доступ';
+        messageDiv.innerText = 'надано доступ';
     }
     if (age < 18) {
-        message.innerText = 'ще не має 18 років((';
+        messageDiv.innerText = 'ще не має 18 років((';
     }
     ;
 };
