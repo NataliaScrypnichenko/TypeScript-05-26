@@ -3,16 +3,16 @@
 //     При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок
 
 
-const input = document.getElementById('in');
-const p = document.getElementById('p');
+const input23:HTMLInputElement = document.getElementById('in') as HTMLInputElement;
+const p: HTMLParagraphElement = document.getElementById('p') as HTMLParagraphElement;
 
-input.oninput=function (){
+input23.oninput=function (){
 
-    const kilo = +input.value;
+    const kilo:number = +input.value;
     // console.log(kilo);
-    let result = kilo * 2.2;
+    let result:number = kilo * 2.2;
     // console.log(result);
 
-    p.innerText = result;
+    p.innerText = result.toString();
 
 };

@@ -15,8 +15,8 @@ for (const courses of coursesAndDurationArray1) {
     h1.innerHTML = courses.title;
     let p = document.createElement('p');
     p.classList.add('description');
-    //@ts-ignore
-    p.innerHTML = courses.monthDuration;
+    // p.innerHTML = String(courses.monthDuration);//зміни тут були використали клас.
+    p.innerHTML = courses.monthDuration.toString();
     div.append(h1, p);
     document.body.appendChild(div);
 }

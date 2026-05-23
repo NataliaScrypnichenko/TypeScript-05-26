@@ -1,9 +1,10 @@
-let sessionsList=JSON.parse(localStorage.getItem('sessionsList'))
+let sessionsList:string[]=JSON.parse(
+    localStorage.getItem('sessionsList') as string)
 //щоб дістати localStorage дані потрібно про ітерувати масив
 for (const session of sessionsList) {
-    let div = document.createElement('div');
+    let div:HTMLDivElement = document.createElement('div');
 
-    let p = document.createElement('p');
+    let p:HTMLParagraphElement = document.createElement('p');
     p.innerHTML = session.toString();
 
     div.appendChild(p);

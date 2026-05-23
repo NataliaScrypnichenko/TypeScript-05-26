@@ -5,36 +5,36 @@
 //     // третій – вміст ячеєк.
 //     // При натисканні кнопки вся ця інформація зчитується і формується табличка з відповідним вмістом
 
+//@ts-ignore
+const tableForm:any= document.forms["tableForm"] as HTMLFormElement;
 
-const tableForm= document.forms['tableForm'];
-
-const row=document.getElementById("row");
-const cell=document.getElementById("cell");
-const text=document.getElementById("tExt");
+const inputRow=document.getElementById("row") as HTMLInputElement;
+const inputCell=document.getElementById("cell") as HTMLInputElement;
+const inputText=document.getElementById("tExt") as HTMLInputElement;
 //
 // let button=document.getElementById("bt");
- const table=document.getElementById("l1");
+ const table=document.getElementById("l1") as HTMLTableElement;
 
 
-tableForm.onsubmit= function (event) {
+tableForm.onsubmit= function (event:any) {
     //чистимо дані щоб таблиця нв таблицю не шла
     table.innerText='';
     //щоб сторінка не перезавантажувалась
     event.preventDefault();
 //зчитуємо інформацію форми інпутів
-    const rowsValue= +tableForm.rows.value;
-    const cellsValue= +tableForm.cells.value;
-    const textValue= tableForm.text.value;
+    const rowsValue= +tableForm.inputRow.value;
+    const cellsValue= +tableForm.inputCell.value;
+    const textValue= tableForm.inputText.value;
     console.log(rowsValue, cellsValue, textValue);
 
     //будуємо структуру,коли не має певної кількость як будувати то використовуємо цикл
     //будуємо рядок
    for (let i=1; i< rowsValue; i++) {
 
-       const tr = document.createElement('tr');
+       const tr:HTMLElement = document.createElement('tr');
        //будуємо ячейку
        for (let j=0; j< cellsValue; j++) {
-           const tc=document.createElement('tc');
+           const tc:HTMLElement=document.createElement('tc');
            tc.textContent= '' + textValue;
            tr.appendChild(tc);
        }

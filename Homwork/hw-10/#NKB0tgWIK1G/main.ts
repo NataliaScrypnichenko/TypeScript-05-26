@@ -10,19 +10,24 @@
 // При натисканні prev виводяться попередні 10 об’єктів
 
 // // створюємо масив з 100 об'єктів
-let users = [];
+type UserType1 = {
+    id: number;
+    name: string;
+};
+
+let users1:UserType1[] = [];
 
 for (let i = 1; i <= 100; i++) {
-    users.push({
+    users1.push({
         id: i,
         name: "User" + i
     });
 }
 
 // console.log(users);
-const block = document.getElementById("block");
-const buttonPerv = document.getElementById("prev");
-const buttonNext = document.getElementById("next");
+const block = document.getElementById("block") as HTMLDivElement;
+const buttonPerv = document.getElementById("prev") as HTMLDivElement;
+const buttonNext = document.getElementById("next") as HTMLDivElement;
 
 // 2. Змінні для пагінації і тут використовуємо ф-ю render()
 let startPage = 1;
@@ -31,13 +36,13 @@ function render() {
 
     block.innerHTML = "";//чистить
 
-    const start = (startPage - 1) * diapasonPage;
-    const end = start + diapasonPage;
+    const start:number = (startPage - 1) * diapasonPage;
+    const end:number = start + diapasonPage;
     // використовуємо .slice(start, end)- яка ріже масив
     const pageItemUsers = users.slice(start, end);
 
     for (let item of pageItemUsers) {
-        const div = document.createElement('div');
+        const div:HTMLDivElement = document.createElement('div');
         div.innerText = `${item.id} - ${item.name}`;
          block.appendChild(div);
     }
