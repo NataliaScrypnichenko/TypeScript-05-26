@@ -40,7 +40,7 @@ if (item){
 
 
 //якщо працюємо із юзером і хочемо витягнути щось із нього то бо не знаємо що затип даних тут знаходиться то потрібно скачтувати або привести жорстко привести до певного типу
-interface UserLS{
+interface IUserLS{
     id: number;
     name: string;
 }
@@ -48,7 +48,7 @@ interface UserLS{
 let item12 = localStorage.getItem('user');
 
 if (item12){
-    let obj = JSON.parse(item);
+    let obj = JSON.parse(item12);
     let user:IUserLS = obj as IUserLS;// тобто це комірка де знаходиться об'єкт такого типу
 }
 
@@ -59,8 +59,7 @@ interface IDog {
 function foobar<T>(key:string):T {
     let objJSON= localStorage.getItem('key');
     if (objJSON){
-        let obj:IDog = JSON.parse(objJSON) as T;
-        return obj;
+        return  JSON.parse(objJSON) as T;
     }
    return {} as T;
 }
